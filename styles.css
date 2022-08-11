@@ -188,7 +188,7 @@
 
 .projects .content {
     display: grid;
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 200px);
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 1rem;
 }
@@ -223,10 +223,25 @@
 .main-content .announcements {
     grid-row: 1;
     grid-column: 2;
+    font-size: 0.8rem;
 }
 
 .announcements .content {
     display: grid;
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+}
+
+.announcements .card{
+    background-color: white;
+    padding: 1.5rem 0;
+}
+
+.announcements .card.middle{
+    border-top: lightgray 1px solid;
+    border-bottom:  lightgray 1px solid;
 }
 
 .main-content .trending {
