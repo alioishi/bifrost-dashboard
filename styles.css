@@ -189,7 +189,7 @@
 .projects .content {
     display: grid;
     grid-template-rows: repeat(3, 200px);
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
     gap: 1rem;
 }
 
@@ -223,7 +223,6 @@
 .main-content .announcements {
     grid-row: 1;
     grid-column: 2;
-    font-size: 0.8rem;
 }
 
 .announcements .content {
@@ -232,14 +231,15 @@
     background-color: white;
     padding: 0 2rem;
     border-radius: 0.5rem;
+    font-size: 0.8rem;
 }
 
-.announcements .card{
+.announcements .card {
     background-color: white;
     padding: 1.5rem 0;
 }
 
-.announcements .card.middle{
+.announcements .card.middle {
     border-top: lightgray 1px solid;
     border-bottom:  lightgray 1px solid;
 }
@@ -251,4 +251,29 @@
 
 .trending .content {
     display: grid;
+    grid-template-rows: repeat(4, 58px);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.trending .card {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.trending .card img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.trending .card .handle {
+    font-weight: bold;
+}
+
+.trending .card .project-name {
+    color: gray;
 }
