@@ -69,7 +69,6 @@
     justify-self: left;
 }
 
-
 .header {
     grid-row: 1;
     grid-column: 2;
@@ -79,7 +78,37 @@
 
 .header .top {
     display: grid;
-    grid-template-columns: 10fr 1fr 1fr 2fr;
+    grid-template-columns: 10fr 1fr 1fr 3fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.top form {
+    display: grid;
+    grid-template-columns: 2rem 0.9fr;
+}
+
+.top button {
+    background-color: white;
+    border: none;
+}
+
+.top form input {
+    background-color: #e2e8f0;
+    border: 0px;
+    border-radius: 15px;
+    height: 1.2rem;
+    padding: 0.3rem 1rem;
+}
+
+.top .profile-pic img {
+    height: 3rem;
+}
+
+.top .name {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .header .bottom {
