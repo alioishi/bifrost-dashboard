@@ -80,7 +80,7 @@
     display: grid;
     grid-template-columns: 10fr 1fr 1fr 3fr;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     gap: 1rem;
 }
 
@@ -113,17 +113,49 @@
 
 .header .bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 .bottom .user {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 100px 4fr;
+    align-items: center;
+}
+
+.user button {
+    background-color: white;
+    border: none;
+}
+
+.user .user-greeting {
+    font-weight: bold;
+    justify-self: start;
+}
+
+.user-greeting .greeting {
+    font-size: 0.8rem;
+}
+
+.user-greeting .handle {
+    font-size: 1.5rem;
 }
 
 .bottom .create-content-buttons {
     display: grid;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.create-content-buttons button {
+    width: 6rem;
+    padding: 0.6rem;
+    border: 0px;
+    border-radius: 25px;
+    background-color: #1992d4;
+    color: white;
+    font-weight: bold;
 }
 
 .main-content {
